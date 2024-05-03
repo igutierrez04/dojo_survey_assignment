@@ -25,41 +25,70 @@
 
             <div class="col-lg-6 bg-secondary rounded pt-3">
                 <!-- form -->
-                <form action="">
+                <form action="/process" method="POST">
                     <label for="name" class="form-label">Name:</label>
                     <div class="mb-4 input-group">
                         <span class="input-group-text">
                             <i class="bi bi-person-fill"></i>
                         </span>
-                        <input type="text" id="name" class="form-control" placeholder="Enter name...">
+                        <input type="text" id="name" class="form-control" placeholder="Enter name..." name="name">
                     </div>
                     <!-- radios -->
-                    <div class="form-check-inline pb-3">
-                        <span>Dojo Location:</span>
-                        <input type="radio" class="form-check-input" id="location1" name="locations">
-                        <label for="location1" class="form-check-label">Florida</label>
+                    <div class="form-group pb-3">
+                        <div class="form-check-inline">
+                            <span>Dojo Location:</span>
+                            <input type="radio" class="form-check-input" id="location1" name="location">
+                            <label for="location1" class="form-check-label">Florida</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="radio" class="form-check-input" id="location2" name="location">
+                            <label for="location2" class="form-check-label">California</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="radio" class="form-check-input" id="location3" name="location">
+                            <label for="location3" class="form-check-label">New York</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="radio" class="form-check-input" id="location4" name="location">
+                            <label for="location4" class="form-check-label">Massachusetts</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="radio" class="form-check-input" id="location5" name="location">
+                            <label for="location5" class="form-check-label">Texas</label>
+                        </div>
                     </div>
-                    <div class="form-check-inline pb-3">
-                        <input type="radio" class="form-check-input" id="location2" name="locations">
-                        <label for="location2" class="form-check-label">California</label>
-                    </div>
-                    <div class="form-check-inline pb-3">
-                        <input type="radio" class="form-check-input" id="location3" name="locations">
-                        <label for="location3" class="form-check-label">New York</label>
-                    </div>
-                    <div class="form-check-inline pb-3">
-                        <input type="radio" class="form-check-input" id="location4" name="locations">
-                        <label for="location4" class="form-check-label">Massachusetts</label>
-                    </div>
-                    <div class="form-check-inline pb-3">
-                        <input type="radio" class="form-check-input" id="location5" name="locations">
-                        <label for="location5" class="form-check-label">Texas</label>
-                    </div>
-                    <!-- checks -->
-                    <div class="form-check">
+                        <!-- checks -->
+                    <div class="form-group pb-3">
                         <span>Favorite Language:</span>
-                        <input type="checkbox" class="form-check-input" id="option1" name="language">
-                        <label for="option1" class="form-check-label">Python</label>
+                        <div class="form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="option1" name="language">
+                            <label for="option1" class="form-check-label">Python</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="option2" name="language">
+                            <label for="option2" class="form-check-label">JavaScript</label>
+                        </div>
+                        <div class="form-check-inline ">
+                            <input type="checkbox" class="form-check-input" id="option3" name="language">
+                            <label for="option3" class="form-check-label">HTML</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="option4" name="language">
+                            <label for="option4" class="form-check-label">CSS</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="checkbox" class="form-check-input" id="option5" name="language">
+                            <label for="option5" class="form-check-label">C#</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-flotating mb-4">
+                            <label for="comment">Comment (optional):</label>
+                            <textarea id="comment" name="comment" class="form-control" style="height: 144px"></textarea>
+                        </div>
+                        <div class="mb-4 text-center">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
                     </div>
                 </form>
             </div>
